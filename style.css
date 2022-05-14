@@ -19,7 +19,7 @@ body {
   overflow: hidden;
   margin: 0 auto;
   /* margin-top: 50%; */
-  transform: translateY(40%);
+  transform: translateY(25%);
 }
 
 .slides {
@@ -53,33 +53,39 @@ figcaption {
   position: absolute;
   display: flex;
   gap: 10px;
-
   top: 94%;
   right: 15%;
 }
 
 .bar {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.dot {
+  margin-top: 8px;
+  margin-left: 10px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   transition: all 0.3s;
-  cursor: pointer;
   background-color: rgb(73, 132, 243);
 }
 
-.bar:hover {
+.bar:hover .dot {
   border: none;
   background-color: aliceblue;
 }
 
-.bar:active {
+.bar:active .dot {
   border: 3px solid white;
   background: none;
 }
 
-.bar:focus {
+/* .bar:focus {
   background-color: black;
-}
+} */
 
 input[name="slide"] {
   position: absolute;
@@ -101,19 +107,19 @@ input[name="slide"] {
   margin-left: -75%;
 }
 
-#r1:checked ~ .navigation label:nth-child(1) {
+#r1:checked ~ .navigation label > #d1 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
-#r2:checked ~ .navigation label:nth-child(2) {
+#r2:checked ~ .navigation label > #d2 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
-#r3:checked ~ .navigation label:nth-child(3) {
+#r3:checked ~ .navigation label > #d3 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
-#r4:checked ~ .navigation label:nth-child(4) {
+#r4:checked ~ .navigation label > #d4 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
@@ -186,61 +192,72 @@ input[name="slide"] {
     top: 48%;
   }
 }
+
+/* Mobile */
 @media screen and (max-width: 570px) {
   .slide img {
-    max-width: 450px;
+    width: 90%;
     height: auto;
   }
 
   figcaption {
-    /* margin-left: auto; */
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 25px;
+    margin-left: 5%;
   }
   .navigation {
-    right: 40%;
-    top: 45%;
+    right: 32%;
+    top: 55%;
   }
-  .bar {
+  .dot {
     width: 16px;
     height: 16px;
   }
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 530px) {
   .navigation {
-    top: 40%;
+    top: 52%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navigation {
+    top: 48%;
   }
   figcaption {
-    /* margin-left: auto; */
-    margin-top: 80px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation {
+    top: 45%;
   }
 }
 @media screen and (max-width: 430px) {
   .navigation {
+    top: 42%;
+  }
+  figcaption {
+    /* margin-left: auto; */
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .navigation {
     top: 35%;
+    right: 25%;
   }
   figcaption {
     /* margin-left: auto; */
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 335px) {
   .navigation {
-    top: 30%;
-    right: 38%;
+    top: 32%;
+    right: 20%;
   }
   figcaption {
     /* margin-left: auto; */
-    margin-top: 60px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .navigation {
-    top: 25%;
-  }
-  figcaption {
-    /* margin-left: auto; */
-    margin-top: 60px;
+    margin-top: 50px;
   }
 }
