@@ -18,7 +18,6 @@ body {
   height: 570px;
   overflow: hidden;
   margin: 0 auto;
-  /* margin-top: 50%; */
   transform: translateY(25%);
 }
 
@@ -82,10 +81,6 @@ figcaption {
   border: 3px solid white;
   background: none;
 }
-
-/* .bar:focus {
-  background-color: black;
-} */
 
 input[name="slide"] {
   position: absolute;
@@ -237,7 +232,6 @@ input[name="slide"] {
     top: 42%;
   }
   figcaption {
-    /* margin-left: auto; */
     margin-top: 60px;
   }
 }
@@ -247,7 +241,6 @@ input[name="slide"] {
     right: 25%;
   }
   figcaption {
-    /* margin-left: auto; */
     margin-top: 50px;
   }
 }
@@ -257,7 +250,6 @@ input[name="slide"] {
     right: 20%;
   }
   figcaption {
-    /* margin-left: auto; */
     margin-top: 50px;
   }
 }
