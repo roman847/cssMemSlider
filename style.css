@@ -175,6 +175,7 @@ input[name="slide"] {
 @media screen and (max-width: 720px) {
   .navigation {
     top: 55%;
+    gap: 8px;
   }
 }
 @media screen and (max-width: 670px) {
@@ -235,7 +236,7 @@ input[name="slide"] {
     margin-top: 60px;
   }
 }
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 400px) {
   .navigation {
     top: 35%;
     right: 25%;
