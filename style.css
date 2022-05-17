@@ -123,19 +123,31 @@ input[name="slide"] {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
+#r1:checked ~ .footer > .navigation label > #d1:hover {
+  border: 3px solid #fff;
+}
+
 #r2:checked ~ .footer > .navigation label > #d2 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
+}
+#r2:checked ~ .footer > .navigation label > #d2:hover {
+  border: 3px solid #fff;
 }
 #r3:checked ~ .footer > .navigation label > #d3 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
+#r3:checked ~ .footer > .navigation label > #d3:hover {
+  border: 3px solid #fff;
+}
 #r4:checked ~ .footer > .navigation label > #d4 {
   background: none;
   border: 3px solid rgb(73, 132, 243);
 }
-
+#r4:checked ~ .footer > .navigation label > #d4:hover {
+  border: 3px solid #fff;
+}
 #r1:checked ~ .footer > .text > .wrapper > .item {
   margin-left: 0%;
 }
@@ -174,7 +186,7 @@ input[name="slide"] {
 @media screen and (max-width: 520px) {
   .footer {
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-top: 20px;
   }
@@ -185,6 +197,7 @@ input[name="slide"] {
     width: 100%;
   }
   .text {
-    margin: 0;
+    margin-right: auto;
+    margin-left: 0;
   }
 }
